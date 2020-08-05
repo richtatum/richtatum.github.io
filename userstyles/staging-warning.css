@@ -1,0 +1,33 @@
+﻿/* ==UserStyle==
+@name         Staging Server Warning
+@namespace    https://twitter.com/richtatum/
+@description  Places a red bar at bottom of page for URLs on staging servers
+@author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
+@version      1.0.1
+@homepageURL  https://github.com/richtatum/userstyles/
+@updateURL    https://raw.githubusercontent.com/richtatum/userstyles/master/staging-warning.css
+@supportURL   https://twitter.com/richtatum/
+@license      CC-BY-SA-4.0
+@preprocessor default
+==/UserStyle== */
+    
+body::after {
+    content:"— STAGING SERVER —" !important;
+    font-family: "Open Sans Extrabold",Verdana, Tahoma, Arial, Helvetica !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    background-color: crimson !important;
+    color: whitesmoke !important;
+    font-size: 18px !important;
+    line-height: 15px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 50vw !important;
+    margin:0 !important;
+    width: calc(100vw - 18px) !important;
+    height: 20px !important;
+    position: fixed !important;
+    display: block !important;
+    z-index: 2147483647 !important;
+    top: calc(100vh - 20.333px) !important;
+}

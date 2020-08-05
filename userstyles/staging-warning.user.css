@@ -3,21 +3,22 @@
 @namespace    https://twitter.com/richtatum/
 @description  Places a red bar at bottom of page for URLs on staging servers
 @author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
-@version      1.0.3
+@version      1.0.5
 @homepageURL  https://richtatum.github.io/userstyles/
-@updateURL    https://richtatum.github.io/userstyles/staging-warning.css
+@updateURL    https://richtatum.github.io/userstyles/staging-warning.user.css
 @supportURL   https://twitter.com/richtatum/
 @license      CC-BY-SA-4.0
 @preprocessor default
 ==/UserStyle== */
-    
+
+@-moz-document url-prefix("https://staging."), url-prefix("http://staging.") {
 body::after {
     content:"\26A0  STAGING SERVER  \26A0" !important;
     font-family: "Open Sans Extrabold",Verdana, Tahoma, Arial, Helvetica !important;
-    font-style: italic !important;
+    font-style: normal !important;
     font-weight: 600 !important;
     background-color: crimson !important;
-    color: whitesmoke !important;
+    color: white !important;
     font-size: 18px !important;
     line-height: 15px !important;
     padding-top: 3px !important;
@@ -30,4 +31,4 @@ body::after {
     display: block !important;
     z-index: 2147483647 !important;
     top: calc(100vh - 20.333px) !important;
-}
+}}

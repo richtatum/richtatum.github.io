@@ -1,9 +1,9 @@
 ﻿/* ==UserStyle==
-@name         Influence Network Hyperlinks
+@name         Highlight EdAx Links
 @namespace    https://twitter.com/richtatum/
-@description  Highlights anchor links that point to one of the Influence Network URLs.
+@description  Highlights anchor links that point to one of the EdAx URLs.
 @author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
-@version      1.0.4
+@version      1.0.6
 @homepageURL  https://richtatum.github.io/userstyles/
 @updateURL    https://richtatum.github.io/userstyles/highlight.in.sites.user.css
 @supportURL   https://twitter.com/richtatum/
@@ -11,45 +11,132 @@
 @preprocessor default
 ==/UserStyle== */
 
+/* UPDATED: 12/03/2020 */
 
+.myhilite
+   {
+      background-color: #FFF200 !important;
+      color: #D40000 !important;
+      border: 0.5px #FFC100 dotted !important;
+   }
+
+   a[href*="IntelligentEdux"],a[href*="intelligentedux"], a[href*="ACADEMICINFLUX"],a[href*="AcademicInflux"],a[href*="academicinflux"],
+   
+   a[href*="ACADEMICINFLUENCE"],a[href*="AcademicInfluence"],a[href*="academicinfluence"],
+   a[href*="ALEXANDRIALIBRARY"], a[href*="AlexandriaLibrary"], a[href*="alexandrialibrary"],
+   a[href*="BRIGHTNOTES"], a[href*="BrightNotes"], a[href*="brightnotes"],
+   a[href*="DALKOBOOK"], a[href*="DalkoBook"], a[href*="dalkobook"],
+   a[href*="EDUCATIONACCESS"], a[href*="EducationAccess"], a[href*="educationaccess"],
+   a[href*="GHOSTDETECT"], a[href*="GhostDetect"], a[href*="ghostdetect"],
+   a[href*="INFLUENCENETWORKS"], a[href*="InfluenceNetworks"], a[href*="influencenetworks"],
+   a[href*="INFLUENCEPUBLISHERS"], a[href*="InfluencePublishers"], a[href*="influencepublishers"],
+   a[href*="INFLUENCERANKINGS"], a[href*="InfluenceRankings"], a[href*="influencerankings"],
+   a[href*="INTELLIGENT.EDUCATION"], a[href*="Intelligent.Education"], a[href*="intelligent.education"], a[href*="intelligent.education"],
+   a[href*="INTELLIGENTEDUCATION"], a[href*="IntelligentEducation"], a[href*="intelligenteducation"],
+   a[href*="MAGNIFYINGTHEUNIVERSE"], a[href*="MagnifyingTheUniverse"], a[href*="magnifyingtheuniverse"],
+   a[href*="POWERLEARNING"], a[href*="PowerLearning"], a[href*="powerlearning"],
+   a[href*="RANKINGANALYTICS"], a[href*="RankingAnalytics"], a[href*="rankinganalytics"],
+   a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"]
+   {
+      background-color:#FFF200 !important;
+      color:#D40000 !important;
+      border:.5px #FFC100 dotted !important;
+      text-decoration:underline !important;
+   }
 
 /* --------------------------------------------------- */
-/* THIS WILL HIGHLIGHT MOST LINKS THAT POINT TO EITHER ONE OF OUR URLS
-   OR OUR BRAND IS MENTIONED IN THE PATH URL HIGHLIGHTED
-   E.G., facebook.com/AcademicInfluence/ */
+/* ONLINE COLLEGES BY STATE HIGHLIGHTS
 /* --------------------------------------------------- */
-a[href*="AcademicInflux"], a[href*="academicinflux"], a[href*="academicinfluencecom"], 
-a[href*="ACADEMICINFLUENCE.COM"], a[href*="AcademicInfluence.com"], a[href*="academicinfluence.com"],
-a[href*="ALEXANDRIALIBRARY.COM"], a[href*="AlexandriaLibrary.com"], a[href*="alexandrialibrary.com"],
-a[href*="BrightNotes"], a[href*="brightnotes"],
-a[href*="BRIGHTNOTES.COM"], a[href*="BrightNotes.com"], a[href*="brightnotes.com"],
-a[href*="DALKOBOOK.COM"], a[href*="DalkoBook.com"], a[href*="dalkobook.com"],
-a[href*="EDUCATIONACCESS.COM"], a[href*="EducationAccess.com"], a[href*="educationaccess.com"],
-a[href*="GHOSTDETECT.COM"], a[href*="GhostDetect.com"], a[href*="ghostdetect.com"],
-a[href*="INFLUENCENETWORKS.COM"], a[href*="InfluenceNetworks.com"], a[href*="influencenetworks.com"],
-a[href*="INFLUENCEPUBLISHERS.COM"], a[href*="InfluencePublishers.com"], a[href*="influencepublishers.com"],
-a[href*="INFLUENCERANKINGS.COM"], a[href*="InfluenceRankings.com"], a[href*="influencerankings.com"],
-a[href*="IntelligentEdux"], a[href*="intelligentedux"],
-a[href*="INTELLIGENT.EDUCATION"], a[href*="Intelligent.Education"], a[href*="intelligent.education"],
-a[href*="INTELLIGENTEDUCATION.COM"], a[href*="IntelligentEducation.com"], a[href*="intelligenteducation.com"],
-a[href*="MAGNIFYINGTHEUNIVERSE.COM"], a[href*="MagnifyingTheUniverse.com"], a[href*="magnifyingtheuniverse.com"],
-a[href*="POWERLEARNING.COM"], a[href*="PowerLearning.com"], a[href*="powerlearning.com"],
-a[href*="RANKINGANALYTICS.COM"], a[href*="RankingAnalytics.com"], a[href*="rankinganalytics.com"],
-a[href*="SUCCESSPORTRAITS.COM"], a[href*="SuccessPortraits.com"], a[href*="successportraits.com"] 
-    { 
-    background-color:#FFFFB6 !important;
-    color:#D40000 !important;
-    border:.5px #FFC100 dotted !important;
-    text-decoration:underline !important;
-    }
+
+   a[href*="CAOnlineColleges"], a[href*="caonlinecolleges"],
+   a[href*="texasonlinecolleges"], a[href*="TexasOnlineColleges"],
+   a[href*="successfulstudent"], a[href*="SuccessfulStudent"]
+
+   {
+      background-color: #FFE2D5 !important;
+      color: #D40000 !important;
+      border: 0.5px #FFC100 dotted !important;
+      text-decoration: underline !important;
+   }
 
 
 /* --------------------------------------------------- */
 /* THIS PLACES AN AI LOGO AFTER A HYPERLINK THAT IS LIKELY A BACKLINK
    NOT JUST A BRAND MENTION IN A URL PATH */
 /* --------------------------------------------------- */
+
 /* AcademicInfluence.com */
-a[href*="//ACADEMICINFLUENCE.COM"]::after, 
-a[href*="//AcademicInfluence.com"]::after, 
-a[href*="//academicinfluence.com"]::after 
-{ content: url("https://richtatum.github.io/userstyles/ai-logo-12x15.svg"); background-color: white;margin-left: 5px !important; }
+   a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
+   {
+      content: url("https://richtatum.github.io/userstyles/ai-logo-12x15.svg") !important;
+      background-color: white !important;
+      margin-left: 5px !important;
+   }
+
+/* --------------------------------------------------- */
+/* MARK REL="" ATTRIBUTES
+/* --------------------------------------------------- */
+
+
+/* MARK NOFOLLOW */
+   a[rel~="nofollow"]:after
+   {
+      content: "✋" !important;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      position:absolute;
+      line-height: 12px;
+      opacity: 0.8;
+      background-color: yellow;
+      width: 12px;
+      height: 12px;
+      z-index: 2147483647;
+      border-radius: 3px;
+      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+      font-size: 12px !important;
+   }
+
+/* MARK SPONSORED*/
+   a[rel~="sponsored"]:after
+   {
+      content: "💰" !important;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      position:absolute;
+      line-height: 12px;
+      opacity: 0.8;
+      background-color: yellow;
+      width: 12px;
+      height: 12px;
+      z-index: 2147483647;
+      border-radius: 3px;
+      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+      font-size: 12px !important;
+   }
+
+/* MARK USER GENERATED CONTENT */
+a[rel~="ugc"]:after
+   {
+      content: "💬" !important;
+       text-decoration: none;
+      padding: 0;
+      margin: 0;
+      position:absolute;
+      line-height: 12px;
+      opacity: 0.8;
+      background-color: yellow;
+      width: 12px;
+      height: 12px;
+      z-index: 2147483647;
+      border-radius: 3px;
+      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+      font-size: 12px !important;
+   }

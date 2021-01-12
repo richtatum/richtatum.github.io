@@ -13,15 +13,18 @@
 
 /* UPDATED: 12/03/2020 */
 
-.myhilite
-   {
-      background-color: #FFF200 !important;
-      color: #D40000 !important;
-      border: 0.5px #FFC100 dotted !important;
-   }
+/* --------------------------------------------------- */
+/* BASE HIGHLIGHT STYLE
+/* --------------------------------------------------- */
+span.myhilite, .myhilite {
+   border: none !important;
+   color: hsla(0, 100%, 39%, 1) !important;
+   background-color: hsla(60, 100%, 50%, .8) !important;
+   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
+}
 
-   a[href*="IntelligentEdux"],a[href*="intelligentedux"], a[href*="ACADEMICINFLUX"],a[href*="AcademicInflux"],a[href*="academicinflux"],
-   
+a[href*="IntelligentEdux"],a[href*="intelligentedux"],
+   a[href*="ACADEMICINFLUX"],a[href*="AcademicInflux"],a[href*="academicinflux"],
    a[href*="ACADEMICINFLUENCE"],a[href*="AcademicInfluence"],a[href*="academicinfluence"],
    a[href*="ALEXANDRIALIBRARY"], a[href*="AlexandriaLibrary"], a[href*="alexandrialibrary"],
    a[href*="BRIGHTNOTES"], a[href*="BrightNotes"], a[href*="brightnotes"],
@@ -36,48 +39,42 @@
    a[href*="MAGNIFYINGTHEUNIVERSE"], a[href*="MagnifyingTheUniverse"], a[href*="magnifyingtheuniverse"],
    a[href*="POWERLEARNING"], a[href*="PowerLearning"], a[href*="powerlearning"],
    a[href*="RANKINGANALYTICS"], a[href*="RankingAnalytics"], a[href*="rankinganalytics"],
-   a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"]
-   {
-      background-color:#FFF200 !important;
-      color:#D40000 !important;
-      border:.5px #FFC100 dotted !important;
-      text-decoration:underline !important;
-   }
+   a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"] {
+   border: none !important;
+   color: hsla(0, 100%, 39%, 1) !important;
+   background-color: hsla(60, 100%, 50%, .8) !important;
+   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
+   text-decoration:underline !important;
+}
 
 /* --------------------------------------------------- */
 /* ONLINE COLLEGES BY STATE HIGHLIGHTS
 /* --------------------------------------------------- */
-
-   a[href*="CAOnlineColleges"], a[href*="caonlinecolleges"],
+a[href*="CAOnlineColleges"], a[href*="caonlinecolleges"],
    a[href*="texasonlinecolleges"], a[href*="TexasOnlineColleges"],
-   a[href*="successfulstudent"], a[href*="SuccessfulStudent"]
-
-   {
-      background-color: #FFE2D5 !important;
-      color: #D40000 !important;
-      border: 0.5px #FFC100 dotted !important;
-      text-decoration: underline !important;
-   }
-
+   a[href*="successfulstudent"], a[href*="SuccessfulStudent"] {
+   border: none !important;
+   color: hsla(0, 100%, 39%, 1) !important;
+   background-color: hsla(60, 100%, 50%, .8) !important;
+   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
+   text-decoration: underline !important;
+}
 
 /* --------------------------------------------------- */
 /* THIS PLACES AN AI LOGO AFTER A HYPERLINK THAT IS LIKELY A BACKLINK
    NOT JUST A BRAND MENTION IN A URL PATH */
 /* --------------------------------------------------- */
-
 /* AcademicInfluence.com */
-   a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
+a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
    {
       content: url("https://richtatum.github.io/userstyles/ai-logo-12x15.svg") !important;
       background-color: white !important;
       margin-left: 5px !important;
-   }
+}
 
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
-
-
 /* MARK NOFOLLOW */
    a[rel~="nofollow"]:after
    {
@@ -97,7 +94,7 @@
       box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
       font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
       font-size: 12px !important;
-   }
+}
 
 /* MARK SPONSORED*/
    a[rel~="sponsored"]:after
@@ -118,11 +115,10 @@
       box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
       font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
       font-size: 12px !important;
-   }
+}
 
 /* MARK USER GENERATED CONTENT */
-a[rel~="ugc"]:after
-   {
+a[rel~="ugc"]:after {
       content: "💬" !important;
        text-decoration: none;
       padding: 0;
@@ -139,4 +135,5 @@ a[rel~="ugc"]:after
       box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
       font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
       font-size: 12px !important;
-   }
+}
+

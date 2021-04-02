@@ -19,7 +19,6 @@
 span.myhilite, mark.myhilite, .myhilite {
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
-   text-decoration: underline !important;
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
    opacity: 0.9 !important;

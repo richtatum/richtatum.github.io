@@ -11,16 +11,13 @@
 @preprocessor default
 ==/UserStyle== */
 
-/* UPDATED: 12/03/2020 */
+/* UPDATED: 2021-04-02 */
 
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
 /* --------------------------------------------------- */
 span.myhilite, .myhilite {
-   border: none !important;
-   color: hsla(0, 100%, 39%, 1) !important;
-   background-color: hsla(60, 100%, 50%, .8) !important;
-   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
+
 }
 
 a[href*="IntelligentEdux"],a[href*="intelligentedux"],
@@ -41,24 +38,49 @@ a[href*="IntelligentEdux"],a[href*="intelligentedux"],
    a[href*="RANKINGANALYTICS"], a[href*="RankingAnalytics"], a[href*="rankinganalytics"],
    a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"] {
    border: none !important;
-   color: hsla(0, 100%, 39%, 1) !important;
-   background-color: hsla(60, 100%, 50%, .8) !important;
-   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
+   color: hsl(0, 100%, 29%) !important;
+   background-color: hsla(50, 100%, 65%, .8) !important;
+   outline: .2em solid  hsla(50, 100%, 54%, .63) !important;
    text-decoration:underline !important;
 }
 
 /* --------------------------------------------------- */
 /* ONLINE COLLEGES BY STATE HIGHLIGHTS
 /* --------------------------------------------------- */
-a[href*="CAOnlineColleges"], a[href*="caonlinecolleges"],
+a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolleges"],
    a[href*="texasonlinecolleges"], a[href*="TexasOnlineColleges"],
    a[href*="successfulstudent"], a[href*="SuccessfulStudent"] {
    border: none !important;
    color: hsla(0, 100%, 39%, 1) !important;
-   background-color: hsla(60, 100%, 50%, .8) !important;
-   outline: .5px solid hsla(0, 100%, 39%, .2) !important;
-   text-decoration: underline !important;
+   background-color: hsla(50, 100%, 65%, .8) !important;
+   outline: .5px solid hsla(50, 68%, 52%, .2) !important;
+   text-decoration:underline !important;
 }
+
+
+/* --------------------------------------------------- */
+/* MARK REL="" ATTRIBUTES
+/* --------------------------------------------------- */
+/* MARK NOFOLLOW */
+   a:after
+   {
+   content: "➚";
+   background-color: hsla(0, 0%, 96%, 0);
+   color: rgba(31, 185, 14, .79);
+   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: -.2em 0 0 -.1em;
+   opacity: 0.9;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
+}
+
+
 
 /* --------------------------------------------------- */
 /* THIS PLACES AN AI LOGO AFTER A HYPERLINK THAT IS LIKELY A BACKLINK
@@ -66,11 +88,23 @@ a[href*="CAOnlineColleges"], a[href*="caonlinecolleges"],
 /* --------------------------------------------------- */
 /* AcademicInfluence.com */
 a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
-   {
-      content: url("https://richtatum.github.io/userstyles/ai-logo-12x15.svg") !important;
-      background-color: white !important;
-      margin-left: 5px !important;
+{
+   content: "✔";
+   color: #15b515f0;
+   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.2em;
+   margin: -.5em 0 0 -.2em;
+   opacity: 0.8;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
 }
+
+
 
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
@@ -78,62 +112,52 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
 /* MARK NOFOLLOW */
    a[rel~="nofollow"]:after
    {
-      content: "✋" !important;
-      text-decoration: none;
-      padding: 0;
-      margin: 0;
-      position:absolute;
-      line-height: 12px;
-      opacity: 0.8;
-      background-color: yellow;
-      width: 12px;
-      height: 12px;
-      z-index: 2147483647;
-      border-radius: 3px;
-      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-      font-size: 12px !important;
+   content: "✋" !important;
+   color: rgba(74, 74, 74, .79);
+   /* -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
+   /* text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */ 
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.1em;
+   margin: -.6em 0 0 -.4em;
+   opacity: 0.75;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
 }
 
 /* MARK SPONSORED*/
    a[rel~="sponsored"]:after
    {
-      content: "💰" !important;
-      text-decoration: none;
-      padding: 0;
-      margin: 0;
-      position:absolute;
-      line-height: 12px;
-      opacity: 0.8;
-      background-color: yellow;
-      width: 12px;
-      height: 12px;
-      z-index: 2147483647;
-      border-radius: 3px;
-      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-      font-size: 12px !important;
+   content: "💰" !important;
+   color: rgba(74, 74, 74, .79);
+   /* -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
+   /* text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */ 
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1em !important;
+   margin: -.6em 0 0 -.6em;
+   opacity: 0.75;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
 }
 
 /* MARK USER GENERATED CONTENT */
 a[rel~="ugc"]:after {
-      content: "💬" !important;
-       text-decoration: none;
-      padding: 0;
-      margin: 0;
-      position:absolute;
-      line-height: 12px;
-      opacity: 0.8;
-      background-color: yellow;
-      width: 12px;
-      height: 12px;
-      z-index: 2147483647;
-      border-radius: 3px;
-      -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-      font-family: 'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-      font-size: 12px !important;
+   content: "💬" !important;
+   color: rgba(74, 74, 74, .79);
+   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.2em !important;
+   margin: -.5em 0 0 -.2em;
+   opacity: 0.8;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
 }
-

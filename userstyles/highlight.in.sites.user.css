@@ -17,6 +17,12 @@
 /* BASE HIGHLIGHT STYLE
 /* --------------------------------------------------- */
 span.myhilite, .myhilite {
+   color: hsl(0, 100%, 26%) !important;
+   background-color: rgb(255, 225, 77) !important;
+   text-decoration: underline !important;
+   box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
+   box-sizing: border-box !important;
+   opacity: 0.9 !important;
 
 }
 
@@ -37,11 +43,12 @@ a[href*="IntelligentEdux"],a[href*="intelligentedux"],
    a[href*="POWERLEARNING"], a[href*="PowerLearning"], a[href*="powerlearning"],
    a[href*="RANKINGANALYTICS"], a[href*="RankingAnalytics"], a[href*="rankinganalytics"],
    a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"] {
-   border: none !important;
-   color: hsl(0, 100%, 29%) !important;
-   background-color: hsla(50, 100%, 65%, .8) !important;
-   outline: .2em solid  hsla(50, 100%, 54%, .63) !important;
-   text-decoration:underline !important;
+   color: hsl(0, 100%, 26%) !important;
+   background-color: rgb(255, 225, 77) !important;
+   text-decoration: underline !important;
+   box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
+   box-sizing: border-box !important;
+   opacity: 0.9 !important;
 }
 
 /* --------------------------------------------------- */
@@ -51,9 +58,10 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
    a[href*="texasonlinecolleges"], a[href*="TexasOnlineColleges"],
    a[href*="successfulstudent"], a[href*="SuccessfulStudent"] {
    border: none !important;
+   box-sizing: border-box !important;
    color: hsla(0, 100%, 39%, 1) !important;
-   background-color: hsla(50, 100%, 65%, .8) !important;
-   outline: .5px solid hsla(50, 68%, 52%, .2) !important;
+   background-color: hsla(50, 100%, 65%, 0.8) !important;
+   box-shadow: rgb(255, 225, 77) 0px 0px 0px 3px, rgba(0, 0, 0, 0.1) 0px 0px 0px 4px, rgba(0, 0, 0, 0.3) 0px 2px 3px 3px !important;
    text-decoration:underline !important;
 }
 
@@ -66,9 +74,9 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
    {
    content: "➚";
    background-color: hsla(0, 0%, 96%, 0);
-   color: rgba(31, 185, 14, .79);
-   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   color: rgba(31, 185, 14, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-weight: bold;
    font-size: 1.2em;
@@ -91,12 +99,12 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
 {
    content: "✔";
    color: #15b515f0;
-   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
+   text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-size: 1.2em;
-   margin: -.5em 0 0 -.2em;
+   margin: -.6em 0 0 -.3em;
    opacity: 0.8;
    padding: 0;
    position: absolute;
@@ -113,9 +121,9 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
    a[rel~="nofollow"]:after
    {
    content: "✋" !important;
-   color: rgba(74, 74, 74, .79);
-   /* -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
-   /* text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */ 
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-size: 1.1em;
@@ -131,9 +139,9 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
    a[rel~="sponsored"]:after
    {
    content: "💰" !important;
-   color: rgba(74, 74, 74, .79);
-   /* -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
-   /* text-shadow: 1px 1px 5px rgba(0,0,0,0.3); */ 
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-size: 1em !important;
@@ -148,9 +156,9 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
 /* MARK USER GENERATED CONTENT */
 a[rel~="ugc"]:after {
    content: "💬" !important;
-   color: rgba(74, 74, 74, .79);
-   -webkit-text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-size: 1.2em !important;

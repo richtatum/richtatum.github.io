@@ -16,7 +16,7 @@
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
 /* --------------------------------------------------- */
-span.myhilite, .myhilite {
+span.myhilite, mark.myhilite, .myhilite {
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
    text-decoration: underline !important;

@@ -11,7 +11,7 @@
 @preprocessor default
 ==/UserStyle== */
 
-/* UPDATED: 2021-04-02 */
+/* UPDATED: 2021-04-16 */
 
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
@@ -22,7 +22,6 @@ span.myhilite, mark.myhilite, .myhilite {
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
    opacity: 0.9 !important;
-
 }
 
 a[href*="IntelligentEdux"],a[href*="intelligentedux"],
@@ -48,6 +47,7 @@ a[href*="IntelligentEdux"],a[href*="intelligentedux"],
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
    opacity: 0.9 !important;
+   border-radius:2px !important;
 }
 
 /* --------------------------------------------------- */
@@ -70,17 +70,16 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
 /* --------------------------------------------------- */
 /* MARK LINKS */
    a:after
-   {
-   content: "•" !important;
-   background-color: hsla(0, 0%, 96%, 0);
-   color: rgba(31, 185, 14, 0.79);
-   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+{
+   content: "👍";
+   color: #15b515f0;
+   -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
+   text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
    font-size: 1.2em;
-   margin: -.2em 0 0 -.1em;
-   opacity: 0.9;
+   margin: -.6em 0 0 -.3em;
+   opacity: 0.8;
    padding: 0;
    position: absolute;
    text-decoration: none;
@@ -94,9 +93,9 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
    NOT JUST A BRAND MENTION IN A URL PATH */
 /* --------------------------------------------------- */
 /* AcademicInfluence.com */
-a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
+a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after, a[rel~="follow"]:after
 {
-   content: "ⓕ";
+   content: "👍";
    color: #15b515f0;
    -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);

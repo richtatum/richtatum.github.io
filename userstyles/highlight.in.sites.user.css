@@ -71,7 +71,7 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
 /* MARK LINKS */
    a:after
    {
-   content: "•";
+   content: "•" !important;
    background-color: hsla(0, 0%, 96%, 0);
    color: rgba(31, 185, 14, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
@@ -96,7 +96,7 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
 /* AcademicInfluence.com */
 a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after
 {
-   content: "🟢";
+   content: "🟢" !important;
    color: #15b515f0;
    -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);

@@ -68,10 +68,10 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
-/* MARK NOFOLLOW */
+/* MARK LINKS */
    a:after
    {
-   content: "➚";
+   content: "•";
    background-color: hsla(0, 0%, 96%, 0);
    color: rgba(31, 185, 14, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);

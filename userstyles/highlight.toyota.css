@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name         Highlight Toyota Links
+@name         Highlight EdAx Links
 @namespace    https://twitter.com/richtatum/
-@description  Highlights anchor links that point to one of a handful of known Toyota URLs.
+@description  Highlights anchor links that point to one of a handful of Toyota URLs.
 @author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
 @version      1.0.6
 @homepageURL  https://richtatum.github.io/userstyles/
@@ -24,9 +24,11 @@ span.myhilite, mark.myhilite, .myhilite {
    opacity: 0.9 !important;
 }
 
-a[href*="TOYOTA.COM"],a[href*="Toyota.com"],a[href*="toyota.com"],
-a[href*="BUYATOYOTA.COM"],a[href*="BuyAtToyota.com"],a[href*="buyatoyota.com"],
-a[href*="PARTS.TOYOTA.COM"],a[href*="Parts.Toyota.com"],a[href*="parts.toyota.com"] {
+a[href*="/TOYOTA.COM"],a[href*="/Toyota.com"],a[href*="/toyota.com"],
+a[href*="/BUYATOYOTA.COM"],a[href*="/BuyAToyota.com"],a[href*="/buyatoyota.com"],
+a[href*="/PARTS.TOYOTA.COM"],a[href*="/Parts.Toyota.com"],a[href*="/parts.toyota.com"],
+a[href*="/WWW.TOYOTA.COM"],a[href*="/www.Toyota.com"],a[href*="/www.toyota.com"],
+a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buyatoyota.com"],
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
    text-decoration: underline !important;

@@ -1,0 +1,116 @@
+/* ==UserStyle==
+@name         Highlight Toyota Links
+@namespace    https://twitter.com/richtatum/
+@description  Highlights anchor links that point to one of a handful of known Toyota URLs.
+@author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
+@version      1.0.6
+@homepageURL  https://richtatum.github.io/userstyles/
+@updateURL    https://richtatum.github.io/userstyles/highlight.toyota.css
+@supportURL   https://twitter.com/richtatum/
+@license      CC-BY-SA-4.0
+@preprocessor default
+==/UserStyle== */
+
+/* UPDATED: 2021-08-05 */
+
+/* --------------------------------------------------- */
+/* BASE HIGHLIGHT STYLE
+/* --------------------------------------------------- */
+span.myhilite, mark.myhilite, .myhilite {
+   color: hsl(0, 100%, 26%) !important;
+   background-color: rgb(255, 225, 77) !important;
+   box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
+   box-sizing: border-box !important;
+   opacity: 0.9 !important;
+}
+
+a[href*="TOYOTA.COM"],a[href*="Toyota.com"],a[href*="toyota.com"],
+a[href*="BUYATOYOTA.COM"],a[href*="BuyAtToyota.com"],a[href*="buyatoyota.com"],
+a[href*="PARTS.TOYOTA.COM"],a[href*="Parts.Toyota.com"],a[href*="parts.toyota.com"] {
+   color: hsl(0, 100%, 26%) !important;
+   background-color: rgb(255, 225, 77) !important;
+   text-decoration: underline !important;
+   box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
+   box-sizing: border-box !important;
+   opacity: 0.9 !important;
+   border-radius:2px !important;
+}
+
+
+/* --------------------------------------------------- */
+/* MARK REL="" ATTRIBUTES
+/* --------------------------------------------------- */
+/* MARK LINKS */
+   a:after
+{
+   content: "👍";
+   color: #15b515f0;
+   -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
+   text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.2em;
+   margin: -.6em 0 0 -.3em;
+   opacity: 0.8;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
+}
+
+
+/* --------------------------------------------------- */
+/* MARK REL="" ATTRIBUTES
+/* --------------------------------------------------- */
+/* MARK NOFOLLOW */
+   a[rel~="nofollow"]:after
+   {
+   content: "✋" !important;
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.1em;
+   margin: -.6em 0 0 -.4em;
+   opacity: 0.75;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
+}
+
+/* MARK SPONSORED*/
+   a[rel~="sponsored"]:after
+   {
+   content: "💰" !important;
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1em !important;
+   margin: -.6em 0 0 -.6em;
+   opacity: 0.75;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
+}
+
+/* MARK USER GENERATED CONTENT */
+a[rel~="ugc"]:after {
+   content: "💬" !important;
+   color: rgba(74, 74, 74, 0.79);
+   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
+   font-weight: bold;
+   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
+   font-size: 1.2em !important;
+   margin: -.5em 0 0 -.2em;
+   opacity: 0.8;
+   padding: 0;
+   position: absolute;
+   text-decoration: none;
+   z-index: 2147483647;
+}

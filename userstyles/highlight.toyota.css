@@ -16,19 +16,22 @@
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
 /* --------------------------------------------------- */
-span.myhilite, mark.myhilite, .myhilite {
+span.myhilite, mark.myhilite, .myhilite
+   {
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
    opacity: 0.9 !important;
+   border-radius:2px !important;
 }
 
-a[href*="/TOYOTA.COM"],a[href*="/Toyota.com"],a[href*="/toyota.com"],
-a[href*="/BUYATOYOTA.COM"],a[href*="/BuyAToyota.com"],a[href*="/buyatoyota.com"],
-a[href*="/PARTS.TOYOTA.COM"],a[href*="/Parts.Toyota.com"],a[href*="/parts.toyota.com"],
-a[href*="/WWW.TOYOTA.COM"],a[href*="/www.Toyota.com"],a[href*="/www.toyota.com"],
-a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buyatoyota.com"],
+a[href*="/TOYOTA.COM"], a[href*="/Toyota.com"], a[href*="/toyota.com"], 
+a[href*="/BUYATOYOTA.COM"], a[href*="/BuyAToyota.com"], a[href*="/buyatoyota.com"], 
+a[href*="/PARTS.TOYOTA.COM"], a[href*="/Parts.Toyota.com"], a[href*="/parts.toyota.com"], 
+a[href*="/WWW.TOYOTA.COM"], a[href*="/www.Toyota.com"], a[href*="/www.toyota.com"], 
+a[href*="/WWW.BUYATOYOTA.COM"], a[href*="/www.BuyAToyota.com"], a[href*="/www.buyatoyota.com"] 
+   {
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
    text-decoration: underline !important;
@@ -36,7 +39,7 @@ a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buya
    box-sizing: border-box !important;
    opacity: 0.9 !important;
    border-radius:2px !important;
-}
+   }
 
 
 /* --------------------------------------------------- */
@@ -44,7 +47,7 @@ a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buya
 /* --------------------------------------------------- */
 /* MARK LINKS */
    a:after
-{
+   {
    content: "👍";
    color: #15b515f0;
    -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
@@ -58,7 +61,7 @@ a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buya
    position: absolute;
    text-decoration: none;
    z-index: 2147483647;
-}
+   }
 
 
 /* --------------------------------------------------- */
@@ -80,7 +83,7 @@ a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buya
    position: absolute;
    text-decoration: none;
    z-index: 2147483647;
-}
+   }
 
 /* MARK SPONSORED*/
    a[rel~="sponsored"]:after
@@ -98,10 +101,11 @@ a[href*="/WWW.BUYATOYOTA.COM"],a[href*="/www.BuyAToyota.com"],a[href*="/www.buya
    position: absolute;
    text-decoration: none;
    z-index: 2147483647;
-}
+   }
 
 /* MARK USER GENERATED CONTENT */
-a[rel~="ugc"]:after {
+a[rel~="ugc"]:after
+   {
    content: "💬" !important;
    color: rgba(74, 74, 74, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
@@ -115,4 +119,4 @@ a[rel~="ugc"]:after {
    position: absolute;
    text-decoration: none;
    z-index: 2147483647;
-}
+   }

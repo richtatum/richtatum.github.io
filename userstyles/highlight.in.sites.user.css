@@ -1,9 +1,9 @@
 ﻿/* ==UserStyle==
-@name         Highlight EdAx Links
+@name         Supports highlighting external link bookmartklet
 @namespace    https://twitter.com/richtatum/
-@description  Highlights anchor links that point to one of the EdAx URLs.
+@description  Highlights anchor links that point to specified URLs
 @author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
-@version      1.0.6
+@version      1.2.0
 @homepageURL  https://richtatum.github.io/userstyles/
 @updateURL    https://richtatum.github.io/userstyles/highlight.in.sites.user.css
 @supportURL   https://twitter.com/richtatum/
@@ -11,6 +11,9 @@
 @preprocessor default
 ==/UserStyle== */
 
+/* UPDATED: 2021-04-16 */
+   /* Removed userstyles that hard-coded domain */
+   /* searches, moved those to main bookmarklet */
 /* UPDATED: 2021-04-16 */
 
 /* --------------------------------------------------- */
@@ -21,56 +24,26 @@ span.myhilite, mark.myhilite, .myhilite {
    background-color: rgb(255, 225, 77) !important;
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
-   opacity: 0.9 !important;
-}
+   opacity: 0.9 !important; }
 
-a[href*="IntelligentEdux"],a[href*="intelligentedux"],
-   a[href*="ACADEMICINFLUX"],a[href*="AcademicInflux"],a[href*="academicinflux"],
-   a[href*="ACADEMICINFLUENCE"],a[href*="AcademicInfluence"],a[href*="academicinfluence"],
-   a[href*="ALEXANDRIALIBRARY"], a[href*="AlexandriaLibrary"], a[href*="alexandrialibrary"],
-   a[href*="BRIGHTNOTES"], a[href*="BrightNotes"], a[href*="brightnotes"],
-   a[href*="DALKOBOOK"], a[href*="DalkoBook"], a[href*="dalkobook"],
-   a[href*="EDUCATIONACCESS"], a[href*="EducationAccess"], a[href*="educationaccess"],
-   a[href*="GHOSTDETECT"], a[href*="GhostDetect"], a[href*="ghostdetect"],
-   a[href*="INFLUENCENETWORKS"], a[href*="InfluenceNetworks"], a[href*="influencenetworks"],
-   a[href*="INFLUENCEPUBLISHERS"], a[href*="InfluencePublishers"], a[href*="influencepublishers"],
-   a[href*="INFLUENCERANKINGS"], a[href*="InfluenceRankings"], a[href*="influencerankings"],
-   a[href*="INTELLIGENT.EDUCATION"], a[href*="Intelligent.Education"], a[href*="intelligent.education"], a[href*="intelligent.education"],
-   a[href*="INTELLIGENTEDUCATION"], a[href*="IntelligentEducation"], a[href*="intelligenteducation"],
-   a[href*="MAGNIFYINGTHEUNIVERSE"], a[href*="MagnifyingTheUniverse"], a[href*="magnifyingtheuniverse"],
-   a[href*="POWERLEARNING"], a[href*="PowerLearning"], a[href*="powerlearning"],
-   a[href*="RANKINGANALYTICS"], a[href*="RankingAnalytics"], a[href*="rankinganalytics"],
-   a[href*="SUCCESSPORTRAITS"], a[href*="SuccessPortraits"], a[href*="successportraits"] {
+
+/* COMMENTING THIS OUT TO REDUCE EDIT NEEDS ON THIS FILE */
+/* LEAVING AS EXAMPLE | 09/08/2021 */
+a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
    color: hsl(0, 100%, 26%) !important;
    background-color: rgb(255, 225, 77) !important;
    text-decoration: underline !important;
    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
    box-sizing: border-box !important;
    opacity: 0.9 !important;
-   border-radius:2px !important;
-}
-
-/* --------------------------------------------------- */
-/* ONLINE COLLEGES BY STATE HIGHLIGHTS
-/* --------------------------------------------------- */
-a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolleges"],
-   a[href*="texasonlinecolleges"], a[href*="TexasOnlineColleges"],
-   a[href*="successfulstudent"], a[href*="SuccessfulStudent"] {
-   border: none !important;
-   box-sizing: border-box !important;
-   color: hsla(0, 100%, 39%, 1) !important;
-   background-color: hsla(50, 100%, 65%, 0.8) !important;
-   box-shadow: rgb(255, 225, 77) 0px 0px 0px 3px, rgba(0, 0, 0, 0.1) 0px 0px 0px 4px, rgba(0, 0, 0, 0.3) 0px 2px 3px 3px !important;
-   text-decoration:underline !important;
-}
+   border-radius:2px !important; }
 
 
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
-/* MARK LINKS */
-   a:after
-{
+/* MARK NORMAL LINKS */
+   a:after {
    content: "👍";
    color: #15b515f0;
    -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
@@ -83,41 +56,16 @@ a[href*="CAOnlineColleges"], a[href*="CAonlinecolleges"], a[href*="caonlinecolle
    padding: 0;
    position: absolute;
    text-decoration: none;
-   z-index: 2147483647;
-}
-
-
-
-/* --------------------------------------------------- */
-/* THIS PLACES AN AI LOGO AFTER A HYPERLINK THAT IS LIKELY A BACKLINK
-   NOT JUST A BRAND MENTION IN A URL PATH */
-/* --------------------------------------------------- */
-/* AcademicInfluence.com */
-a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::after, a[href*="//academicinfluence.com"]::after, a[rel~="follow"]:after
-{
-   content: "👍";
-   color: #15b515f0;
-   -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
-   text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
-   font-weight: bold;
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 1.2em;
-   margin: -.6em 0 0 -.3em;
-   opacity: 0.8;
-   padding: 0;
-   position: absolute;
-   text-decoration: none;
-   z-index: 2147483647;
-}
+   z-index: 2147483647; }
 
 
 
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
-/* MARK NOFOLLOW */
-   a[rel~="nofollow"]:after
-   {
+/* MARK NOFOLLOW LINKS */
+/* OVERRIDES PREVIOUS CSS */
+   a[rel~="nofollow"]:after {
    content: "✋" !important;
    color: rgba(74, 74, 74, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
@@ -130,12 +78,11 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
    padding: 0;
    position: absolute;
    text-decoration: none;
-   z-index: 2147483647;
-}
+   z-index: 2147483647; }
 
-/* MARK SPONSORED*/
-   a[rel~="sponsored"]:after
-   {
+/* MARK SPONSORED LINKS */
+/* OVERRIDES PREVIOUS CSS */
+   a[rel~="sponsored"]:after {
    content: "💰" !important;
    color: rgba(74, 74, 74, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
@@ -148,11 +95,11 @@ a[href*="//ACADEMICINFLUENCE.COM"]::after, a[href*="//AcademicInfluence.com"]::a
    padding: 0;
    position: absolute;
    text-decoration: none;
-   z-index: 2147483647;
-}
+   z-index: 2147483647; }
 
 /* MARK USER GENERATED CONTENT */
-a[rel~="ugc"]:after {
+/* OVERRIDES PREVIOUS CSS */
+   a[rel~="ugc"]:after {
    content: "💬" !important;
    color: rgba(74, 74, 74, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
@@ -165,5 +112,4 @@ a[rel~="ugc"]:after {
    padding: 0;
    position: absolute;
    text-decoration: none;
-   z-index: 2147483647;
-}
+   z-index: 2147483647; }

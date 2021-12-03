@@ -44,13 +44,13 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
 /* --------------------------------------------------- */
 /* MARK NORMAL LINKS */
    a:after {
-   content: "👍";
+   content: "🟢";
    color: #15b515f0;
    -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 1.2em;
+   font-size: 1em;
    margin: -.6em 0 0 -.3em;
    opacity: 0.8;
    padding: 0;
@@ -66,13 +66,13 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
 /* MARK NOFOLLOW LINKS */
 /* OVERRIDES PREVIOUS CSS */
    a[rel~="nofollow"]:after {
-   content: "✋" !important;
+   content: "🔴" !important;
    color: rgba(74, 74, 74, 0.79);
    -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 1.1em;
+   font-size: 1;
    margin: -.6em 0 0 -.4em;
    opacity: 0.75;
    padding: 0;

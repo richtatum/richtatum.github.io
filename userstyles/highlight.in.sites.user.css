@@ -17,7 +17,7 @@
 /* UPDATED: 2021-04-16 */
 /* UPDATED: 2021-12-03 */
 	/* Changed unicode icons for indicating follow vs. nofollow */
-	/* Changed font size of icons to 13px */
+	/* Changed font size of icons to 6px */
 
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
@@ -53,7 +53,7 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
    text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 13px !important;
+   font-size: 6px !important;
    margin: -.6em 0 0 -.3em;
    opacity: 0.8;
    padding: 0;
@@ -75,7 +75,7 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
    text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 13px !important;
+   font-size: 6px !important;
    margin: -.6em 0 0 -.4em;
    opacity: 0.75;
    padding: 0;
@@ -92,7 +92,7 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
    text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 13px !important;
+   font-size: 6px !important;
    margin: -.6em 0 0 -.6em;
    opacity: 0.75;
    padding: 0;
@@ -109,7 +109,7 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
    text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
    font-weight: bold;
    font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 13px !important;
+   font-size: 6px !important;
    margin: -.5em 0 0 -.2em;
    opacity: 0.8;
    padding: 0;

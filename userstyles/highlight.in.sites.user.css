@@ -18,6 +18,8 @@
 /* UPDATED: 2021-12-03 */
 	/* Changed unicode icons for indicating follow vs. nofollow */
 	/* Changed font size of icons to 6px */
+/* UPDATED: 2021-12-03 */
+	/* Modified opacity and display properties */
 
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE
@@ -46,20 +48,19 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
 /* MARK NORMAL LINKS */
-   a:after {
-   content: "🟢";
-   color: #15b515f0;
-   -webkit-text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
-   text-shadow: -0.5px -0.5px 0.5px rgba(255, 255, 255, .9), 0.5px 0.5px 1px rgba(0,0,0,0.2);
-   font-weight: bold;
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 6px !important;
-   margin: -.6em 0 0 -.3em;
-   opacity: 0.8;
-   padding: 0;
-   position: absolute;
-   text-decoration: none;
-   z-index: 2147483647; }
+   a::before {
+   content: "" !important;
+   margin:0 !important;
+   background: rgba(0, 178, 82, .5) !important;
+   outline: 1px solid rgba(0, 178, 82, .8) !important;
+   padding: 0 !important;
+   width: 3px !important; min-width: 3px !important; max-width: 3px !important;
+   height: 3px !important; min-height: 3px !important; max-height: 3px !important;
+   display: inherit !important;
+   position: absolute !important;
+   z-index: 2147483647 !important;
+   box-shadow: 0.5px 0.5px 6px 1px rgba(0,0,0,.5), 2px 2px 2px -2px rgba(0,0,0,.6) !important;
+}
 
 
 
@@ -68,51 +69,51 @@ a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] {
 /* --------------------------------------------------- */
 /* MARK NOFOLLOW LINKS */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="nofollow"]:after {
-   content: "🔴" !important;
-   color: rgba(74, 74, 74, 0.79);
-   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   font-weight: bold;
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 6px !important;
-   margin: -.6em 0 0 -.4em;
-   opacity: 0.75;
-   padding: 0;
-   position: absolute;
-   text-decoration: none;
-   z-index: 2147483647; }
+   a[rel~="nofollow"]:before {
+   content: "" !important;
+   background: rgba(227, 0, 0, .5) !important;
+   outline: 1px solid rgba(227, 0, 0, .8) !important;
+   padding: 0 !important;
+   width: 3px !important; min-width: 3px !important; max-width: 3px !important;
+   height: 3px !important; min-height: 3px !important; max-height: 3px !important;
+   display: inherit !important;
+   position: absolute !important;
+   z-index: 2147483647 !important;
+   box-shadow: 0.5px 0.5px 6px 1px rgba(0,0,0,.5), 2px 2px 2px -2px rgba(0,0,0,.6) !important;
+   }
 
 /* MARK SPONSORED LINKS */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="sponsored"]:after {
+   a[rel~="sponsored"]:before {
    content: "💰" !important;
-   color: rgba(74, 74, 74, 0.79);
-   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   font-weight: bold;
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 6px !important;
-   margin: -.6em 0 0 -.6em;
-   opacity: 0.75;
-   padding: 0;
-   position: absolute;
-   text-decoration: none;
-   z-index: 2147483647; }
+   opacity: 0.8 !important;
+   font-size: 10px !important;
+   line-height: 12px !important;
+   background: rgba(74, 74, 74, .5) !important;
+   outline: 1px solid rgba(74, 74, 74, .8) !important;
+   padding: 0 !important;
+   width: 13px !important; min-width: 13px !important; max-width: 13px !important; 
+   height: 13px !important;; min-height: 13px !important; max-height: 13px !important; 
+   display: inherit !important;
+   position: absolute !important;
+   z-index: 2147483647 !important;
+   box-shadow: 0.5px 0.5px 6px 1px rgba(0,0,0,.5), 2px 2px 2px -2px rgba(0,0,0,.6) !important;
+   }
 
 /* MARK USER GENERATED CONTENT */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="ugc"]:after {
+   a[rel~="ugc"]:before {
    content: "💬" !important;
-   color: rgba(74, 74, 74, 0.79);
-   -webkit-text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   text-shadow: -0.5px -.5px .5px rgba(255, 255, 255, .8), 1px 1px 4px rgba(0,0,0,0.3);
-   font-weight: bold;
-   font-family: Roboto,'Open Sans Condensed',Calibri,Tahoma,Verdana,Helvetica;
-   font-size: 6px !important;
-   margin: -.5em 0 0 -.2em;
-   opacity: 0.8;
-   padding: 0;
-   position: absolute;
-   text-decoration: none;
-   z-index: 2147483647; }
+   opacity: 0.8 !important;
+   font-size: 10px !important;
+   line-height: 12px !important;
+   background: rgba(74, 74, 74, .5) !important;
+   outline: 1px solid rgba(74, 74, 74, .8) !important;
+   padding: 0 !important;
+   width: 13px !important; min-width: 13px !important; max-width: 13px !important; 
+   height: 13px !important;; min-height: 13px !important; max-height: 13px !important; 
+   display: inherit !important;
+   position: absolute !important;
+   z-index: 2147483647 !important;
+   box-shadow: 0.5px 0.5px 6px 1px rgba(0,0,0,.5), 2px 2px 2px -2px rgba(0,0,0,.6) !important;
+   }

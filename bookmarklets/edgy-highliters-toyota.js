@@ -1,5 +1,9 @@
 ﻿javascript:(function(){var count=0,text,regexp;
-text='';
+/* Updated: 09/29/2022 04:47 AM */
+/* Modify this regular expression to find URL mentions in visble HTML. */
+/* Note: The Regex cannot span nodes. So, if there are any elements interrupting the string, the search will fail */
+text='(https*:\/\/buyatoyota\.com|https*:\/\/toyota\.com|https*:\/\/toyotacertified\.com|https*:\/\/autoparts\.toyota\.com|https*:\/\/parts\.toyota\.com|https*:\/\/www\.toyota\.com|https*:\/\/www\.toyotacertified\.com|https*:\/\/www\.buyatoyota\.com|www\.toyota\.com|www\.toyotacertified\.com|www\.buyatoyota\.com|buyatoyota\.com|toyota\.com|toyotacertified\.com|autoparts\.toyota\.com|parts\.toyota\.com)';
+/* Modify this stylesheet to find hyperlinks to the list of domains. This is only a wildcard, not a true regular expression */
 document.querySelector('head').innerHTML+='<style>a[href*="/buyatoyota.com"],a[href*="/toyota.com"],a[href*="/toyotacertified.com"],a[href*="www.buyatoyota.com"],a[href*="www.toyota.com"] ,a[href*="www.toyotacertified.com"],a[href*="autoparts.toyota.com"],a[href*="parts.toyota.com"] {color:hsl(0,100%,26%);background-color:rgb(255,225,77);text-decoration:underline;box-shadow:rgb(255,225,77) 0px 0px 0px 4px,rgba(0,0,0,0.1) 1px 1px 1px 4px,rgba(0,0,0,0.1) 0px 0px 6px 4px;box-sizing:border-box;opacity:0.9;border-radius:2px;}</style>';
 document.querySelector('head').innerHTML+='<link rel="stylesheet" href="https://richtatum.github.io/userstyles/highlight.in.sites.user.css?v='+parseInt(Math.random()*99999999)+'" />';
 if(text==null||text.length==0)return;

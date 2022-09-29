@@ -1,4 +1,4 @@
-﻿(function(compareWith, key, zoomAware, keepMaximized, n) { 
+﻿javascript:(function(compareWith, key, zoomAware, keepMaximized, n) { 
 	function remainingInit() { dom.style.visibility = "hidden"; }
 	function toggleAbilityVisibility() { dom.style.visibility = "visible"; }
 

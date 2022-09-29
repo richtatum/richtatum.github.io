@@ -9,6 +9,7 @@
 	var str = "ws_cmbms-" + n;
 	var el = doc.getElementById(str);
 	var element = null;
+	var heading = null;
 	var i;
 	var opts = { 
 		tl : { left: "10px", top:"10px" },
@@ -31,9 +32,15 @@
 		el.appendChild(doc.createTextNode(t));
 		doc.getElementsByTagName("head")[0].appendChild(el);
 	 	}
+
 	dom = doc.createElement("div");
 	dom.setAttribute("id", id);
 	dom.className = "ws_cmbmc";
+
+	element = doc.createElement("span");
+	element.appendChild(doc.createTextNode("Edgy SEO Bookmarklets"));
+	dom.appendChild(element);
+	
 	i = 0;
 	for (; i < compareWith.length; i++) { 
 		element = doc.createElement("a");

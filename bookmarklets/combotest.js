@@ -1,82 +1,10 @@
-﻿javascript:(function(compareWith, key, zoomAware, keepMaximized, n) { 
-	function remainingInit() { dom.style.visibility = "hidden"; }
-	function toggleAbilityVisibility() { dom.style.visibility = "visible"; }
-
-	var doc = document;
-	var onclick = doc.onclick;
-	var id = "ws_cmbm-" + n;
-	var dom = doc.getElementById(id);
-	var str = "ws_cmbms-" + n;
-	var el = doc.getElementById(str);
-	var element = null;
-	var heading = null;
-	var i;
-	var opts = { 
-		tl : { left: "10px", top:"10px" },
-		tr : { right : "10px", top:"10px" },
-		bl : { left: "10px", bottom : "10px" },
-		br : { right : "10px", bottom : "10px" }
-		 };
-	var type;
-	var t = "";	
-	if (dom) { 
-		if (dom.style.visibility == "visible") { remainingInit(); }
-		else { toggleAbilityVisibility();}
-		return;
-	 	}
-	if (!el) { 
-		t = t.replace(/.ws_cmbmc/g, "#" + id);
-		el = doc.createElement("style");
-		el.type = "text/css";
-		el.id = str;
-		el.appendChild(doc.createTextNode(t));
-		doc.getElementsByTagName("head")[0].appendChild(el);
-	 	}
-
-	dom = doc.createElement("div");
-	dom.setAttribute("id", id);
-	dom.className = "ws_cmbmc";
-
-	element = doc.createElement("span");
-	element.appendChild(doc.createTextNode("Edgy SEO Bookmarklets"));
-	dom.appendChild(element);
-	
-	i = 0;
-	for (; i < compareWith.length; i++) { 
-		element = doc.createElement("a");
-			element.setAttribute("href", compareWith[i].url);
-				element.appendChild(doc.createElement("img")).setAttribute("src", compareWith[i].icon);
-				element.appendChild(doc.createTextNode(compareWith[i].title));
-
-
-		element.onclick = function(branch) { 
-			if (zoomAware) { remainingInit();}
-		 	};
-		dom.appendChild(element);
-	 	}
-	doc.getElementsByTagName("body")[0].appendChild(dom);
-	if (opts.hasOwnProperty(key)) { 
-		for (type in opts[key]) { 
-			dom.style[type] = opts[key][type];
-		 	}
-	 	}
-	 else { 
-		if (key == "c") { 
-			dom.style.left = Math.round((window.innerWidth - dom.offsetWidth) / 2) + "px";
-			dom.style.top = "40px";
-		 	}
-	 	}
-	if (keepMaximized) { 
-		doc.onclick = function() { 
-			remainingInit();
-			if (typeof onclick == "function") { onclick(); }
-			 };
-		dom.onclick = function(event) { event.stopPropagation(); };
-		 }
-	toggleAbilityVisibility();
- })
+﻿javascript:(function(compareWith, key, zoomAware, keepMaximized, n) {elementfunction remainingInit() { dom.style.visibility = "hidden"; }elementfunction toggleAbilityVisibility() { dom.style.visibility = "visible"; }elementvar doc = document;elementvar onclick = doc.onclick;elementvar id = "ws_cmbm-" + n;elementvar dom = doc.getElementById(id);elementvar str = "ws_cmbms-" + n;elementvar el = doc.getElementById(str);elementvar element = null;elementvar heading = null;elementvar i;elementvar opts = {elementtl : { left: "10px", top:"10px" },elementtr : { right : "10px", top:"10px" },elementbl : { left: "10px", bottom : "10px" },elementbr : { right : "10px", bottom : "10px" }element};elementvar type;elementvar t = "";elementif (dom) {elementif (dom.style.visibility == "visible") { remainingInit(); }elementelse { toggleAbilityVisibility();}elementreturn;element}elementif (!el) {elementt = t.replace(/.ws_cmbmc/g, "#" + id);elementel = doc.createElement("style");elementel.type = "text/css";elementel.id = str;elementel.appendChild(doc.createTextNode(t));elementdoc.getElementsByTagName("head")[0].appendChild(el);element}elementdom = doc.createElement("div");elementdom.setAttribute("id", id);elementdom.className = "ws_cmbmc";elementelement = doc.createElement("span");elementelement.appendChild(doc.createTextNode("Edgy SEO Bookmarklets"));elementdom.appendChild(element);elementi = 0;elementfor (; i < compareWith.length; i++) {elementelement = doc.createElement("a");elementelement.setAttribute("href", compareWith[i].url);elementelement.appendChild(doc.createElement("img")).setAttribute("src", compareWith[i].icon);elementelement.appendChild(doc.createTextNode(compareWith[i].title));elementelement.onclick = function(branch) {elementif (zoomAware) { remainingInit();}element};elementdom.appendChild(element);element}elementdoc.getElementsByTagName("body")[0].appendChild(dom);elementif (opts.hasOwnProperty(key)) {elementfor (type in opts[key]) {elementdom.style[type] = opts[key][type];element}element}elementelse {elementif (key == "c") {elementdom.style.left = Math.round((window.innerWidth - dom.offsetWidth) / 2) + "px";elementdom.style.top = "40px";element}element}elementif (keepMaximized) {elementdoc.onclick = function() {elementremainingInit();elementif (typeof onclick == "function") { onclick(); }element};elementdom.onclick = function(event) { event.stopPropagation(); };element}elementtoggleAbilityVisibility();element})
 ([
+
 { title:"Highlighters",url:"https://ONE.com/",icon:"https://freesvg.org/img/lightbulb3.png" },
+
 { title:"TWO",url:"https://ONE.com/",icon:"https://raw.githubusercontent.com/eirikmadland/notion-icons/master/v5/icon4/mt-brightness_auto.svg" },
+
 { title:"THREE",url:"https://ONE.com/",icon:"https://raw.githubusercontent.com/eirikmadland/notion-icons/master/v5/icon4/mt-backup.svg" }
+
 ],"c",true,true,1664423943207)

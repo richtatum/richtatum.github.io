@@ -2,10 +2,12 @@
 // Bookmarklet to capture URLs, titles, and any selected text to a Google Sheets form
 // Intended for use for capturing news items for Edgy Labs’ Newsletter: SEO Notes from the Edge
 // Created: 03/27/2023 08:02 AM
-// Updated: 03/27/2023 08:02 AM
+// Updated: 03/27/2023 8:22 AM
 	// Saved to GitHub
+	// Removed TLD deletion
 
-var domain = location.hostname.toString().replace(/(www\.|\.com|\.net|\.org)/g,'').replace(/^\w/, c => c.toUpperCase());
+// var domain = location.hostname.toString().replace(/(www\.|\.com|\.net|\.org)/g,'').replace(/^\w/, c => c.toUpperCase());
+var domain = location.hostname.toString().replace(/^\w/, c => c.toUpperCase());
 var utmPattern = /(\?|&)(utm_[^&=]+=[^&]*)/gi;
 var wUrl = encodeURIComponent(location.href.replace(utmPattern, ''));
 var wTitle=encodeURIComponent(document.title + " | " + domain);

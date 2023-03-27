@@ -1,4 +1,4 @@
-var showHtml = function (elem) {
+﻿var showHtml = function (elem) {
     };
 
 var aardvark = {
@@ -71,8 +71,3 @@ for (var i=0; i<aardvark.srcFiles.length; i++) {
 	document.body.appendChild(scriptElem);
 	}
 })();
-Highlight text
-
-(ctrl+d)
-
-Copied

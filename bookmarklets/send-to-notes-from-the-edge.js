@@ -1,4 +1,4 @@
-﻿/*
+/*
 SEND TO NOTES FROM THE EDGE
 Bookmarklet to capture URLs, titles, and any selected text to a Google Sheets form
 Intended for use for capturing news items for Edgy Labs' Newsletter: SEO Notes from the Edge

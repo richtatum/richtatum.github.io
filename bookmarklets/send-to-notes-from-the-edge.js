@@ -3,7 +3,7 @@ SEND TO NOTES FROM THE EDGE
 Bookmarklet to capture URLs, titles, and any selected text to a Google Sheets form
 Intended for use for capturing news items for Edgy Labs' Newsletter: SEO Notes from the Edge
 Created: 03/27/2023 08:02 AM
-Updated: 04/04/2023 10:10 AM
+Updated: 04/04/2023 11:38 AM
    Modified comment braces
    Provided fallback for meta description
    Changed var to const

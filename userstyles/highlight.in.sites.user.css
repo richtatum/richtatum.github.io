@@ -1,73 +1,86 @@
 ﻿/* ==UserStyle==
-@name         Supports highlighting external link bookmartklet
-@namespace    https://twitter.com/richtatum/
+@name			Supports highlighting external link bookmartklet
+@namespace	 https://twitter.com/richtatum/
 @description  Highlights anchor links that point to specified URLs
-@author       Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
-@version      1.2.0
+@author		 Rich Tatum <rich.tatum@gmail.com> (https://twitter.com/richtatum/)
+@version		1.2.1
 @homepageURL  https://richtatum.github.io/userstyles/
-@updateURL    https://richtatum.github.io/userstyles/highlight.in.sites.user.css
-@supportURL   https://twitter.com/richtatum/
-@license      CC-BY-SA-4.0
+@updateURL	 https://richtatum.github.io/userstyles/highlight.in.sites.user.css
+@supportURL	https://twitter.com/richtatum/
+@license		CC-BY-SA-4.0
 @preprocessor default
 ==/UserStyle== */
 
 /* UPDATED: 2021-04-16 */
-   /* Removed userstyles that hard-coded domain */
-   /* searches, moved those to main bookmarklet */
+	/* Removed userstyles that hard-coded domain */
+	/* searches,moved those to main bookmarklet */
 /* UPDATED: 2021-04-16 */
 /* UPDATED: 2021-12-03 */
 	/* Changed unicode icons for indicating follow vs. nofollow */
 	/* Changed font size of icons to 6px */
 /* UPDATED: 2021-12-03 */
 	/* Modified opacity and display properties */
+/* UPDATED: 2023-07-18 */
+	/* Added styling for "bad" links */
 
 /* COMMENTING THIS OUT TO REDUCE EDIT NEEDS ON THIS FILE */
 /* LEAVING AS EXAMPLE | 09/08/2021 */
-/* a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"] { */
-/*    color: hsl(0, 100%, 26%) !important; */
-/*    background-color: rgb(255, 225, 77) !important; */
-/*    text-decoration: underline !important; */
-/*    box-shadow: rgb(255, 225, 77) 0px 0px 0px 4px, rgba(0, 0, 0, 0.1) 1px 1px 1px 4px, rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important; */
-/*    box-sizing: border-box !important; */
-/*    opacity: 0.9 !important; */
-/*    border-radius:2px !important; } */
+/* a[href*="_urlsearchtexthere_"],a[href*="_urlsearchtexthere_"]{ */
+/*	 color: hsl(0,100%,26%) !important;*/
+/*	 background-color: rgb(255,225,77) !important;*/
+/*	 text-decoration: underline !important;*/
+/*	 box-shadow: rgb(255,225,77) 0px 0px 0px 4px,rgba(0,0,0,0.1) 1px 1px 1px 4px,rgba(0,0,0,0.1) 0px 0px 6px 4px !important;*/
+/*	 box-sizing: border-box !important;*/
+/*	 opacity: 0.9 !important;*/
+/*	 border-radius:2px !important;} */
 
 
 /* --------------------------------------------------- */
 /* BASE HIGHLIGHT STYLE (for MARK ELEMENT)
 /* --------------------------------------------------- */
-span.myhilite, mark.myhilite, .myhilite {
-   color: rgb(133,0,0) !important;
-   background-color: rgb(255,225,77) !important;
-   box-shadow:
-       rgb(255, 225, 77) 0px 0px 0px 4px,
-       rgba(0, 0, 0, 0.1) 1px 1px 1px 4px,
-       rgba(0, 0, 0, 0.1) 0px 0px 6px 4px !important;
-   box-sizing: border-box !important;
-   opacity: 0.9 !important;
-   border-radius:2px !important; 
+span.myhilite,mark.myhilite,.myhilite{
+	color: rgb(133,0,0) !important;
+	background-color: rgb(255,225,77) !important;
+	box-shadow:
+		 rgb(255,225,77) 0px 0px 0px 4px,
+		 rgba(0,0,0,0.1) 1px 1px 1px 4px,
+		 rgba(0,0,0,0.1) 0px 0px 6px 4px !important;
+	box-sizing: border-box !important;
+	opacity: 0.9 !important;
+	border-radius:2px !important;
 }
 
+span.myhilitebad,mark.myhilitebad,.myhilitebad{
+	color: rgb(133,0,0) !important;
+	background-color: rgb(255,160,160) !important;
+	box-shadow:
+		 rgb(255,160,160) 0px 0px 0px 4px,
+		 rgba(0,0,0,0.1) 1px 1px 1px 4px,
+		 rgba(0,0,0,0.1) 0px 0px 6px 4px !important;
+	box-sizing: border-box !important;
+	opacity: 0.9 !important;
+	border-radius:2px !important;
+}
 
 
 /* --------------------------------------------------- */
 /* MARK REL="" ATTRIBUTES
 /* --------------------------------------------------- */
 /* MARK NORMAL LINKS */
-   a::before {
-   content: "" !important;
-   margin:0 !important;
-   background: rgba(0, 178, 82, .5) !important;
-   outline: 1px solid rgba(0, 178, 82, .8) !important;
-   padding: 0 !important;
-   width: 3px !important; min-width: 3px !important; max-width: 3px !important;
-   height: 3px !important; min-height: 3px !important; max-height: 3px !important;
-   display: inherit !important;
-   position: absolute !important;
-   z-index: 2147483647 !important;
-   box-shadow:
-       0.5px 0.5px 6px 1px rgba(0,0,0,.5),
-       2px 2px 2px -2px rgba(0,0,0,.6) !important;
+	a::before{
+	content: "" !important;
+	margin:0 !important;
+	background: rgba(0,178,82,0.5) !important;
+	outline: 1px solid rgba(0,178,82,0.8) !important;
+	padding: 0 !important;
+	width: 3px !important;min-width: 3px !important;max-width: 3px !important;
+	height: 3px !important;min-height: 3px !important;max-height: 3px !important;
+	display: inherit !important;
+	position: absolute !important;
+	z-index: 2147483647 !important;
+	box-shadow:
+		 0.5px 0.5px 6px 1px rgba(0,0,0,0.5),
+		 2px 2px 2px -2px rgba(0,0,0,0.6) !important;
 }
 
 
@@ -77,57 +90,57 @@ span.myhilite, mark.myhilite, .myhilite {
 /* --------------------------------------------------- */
 /* MARK NOFOLLOW LINKS */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="nofollow"]:before {
-   content: "" !important;
-   background: rgba(227, 0, 0, .5) !important;
-   outline: 1px solid rgba(227, 0, 0, .8) !important;
-   padding: 0 !important;
-   width: 3px !important; min-width: 3px !important; max-width: 3px !important;
-   height: 3px !important; min-height: 3px !important; max-height: 3px !important;
-   display: inherit !important;
-   position: absolute !important;
-   z-index: 2147483647 !important;
-    box-shadow:
-        0.5px 0.5px 6px 1px rgba(0,0,0,.5),
-        2px 2px 2px -2px rgba(0,0,0,.6) !important;
-   }
+	a[rel~="nofollow"]:before{
+	content: "" !important;
+	background: rgba(227,0,0,0.5) !important;
+	outline: 1px solid rgba(227,0,0,0.8) !important;
+	padding: 0 !important;
+	width: 3px !important;min-width: 3px !important;max-width: 3px !important;
+	height: 3px !important;min-height: 3px !important;max-height: 3px !important;
+	display: inherit !important;
+	position: absolute !important;
+	z-index: 2147483647 !important;
+	 box-shadow:
+		  0.5px 0.5px 6px 1px rgba(0,0,0,0.5),
+		  2px 2px 2px -2px rgba(0,0,0,0.6) !important;
+	}
 
 /* MARK SPONSORED LINKS */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="sponsored"]:before {
-   content: "💰" !important;
-   opacity: 0.8 !important;
-   font-size: 10px !important;
-   line-height: 12px !important;
-   background: rgba(74, 74, 74, .5) !important;
-   outline: 1px solid rgba(74, 74, 74, .8) !important;
-   padding: 0 !important;
-   width: 13px !important; min-width: 13px !important; max-width: 13px !important; 
-   height: 13px !important;; min-height: 13px !important; max-height: 13px !important; 
-   display: inherit !important;
-   position: absolute !important;
-   z-index: 2147483647 !important;
-    box-shadow:
-        0.5px 0.5px 6px 1px rgba(0,0,0,.5),
-        2px 2px 2px -2px rgba(0,0,0,.6) !important;
-   }
+	a[rel~="sponsored"]:before{
+	content: "💰" !important;
+	opacity: 0.8 !important;
+	font-size: 10px !important;
+	line-height: 12px !important;
+	background: rgba(74,74,74,.5) !important;
+	outline: 1px solid rgba(74,74,74,.8) !important;
+	padding: 0 !important;
+	width: 13px !important;min-width: 13px !important;max-width: 13px !important;
+	height: 13px !important;;min-height: 13px !important;max-height: 13px !important;
+	display: inherit !important;
+	position: absolute !important;
+	z-index: 2147483647 !important;
+	 box-shadow:
+		  0.5px 0.5px 6px 1px rgba(0,0,0,.5),
+		  2px 2px 2px -2px rgba(0,0,0,.6) !important;
+	}
 
 /* MARK USER GENERATED CONTENT */
 /* OVERRIDES PREVIOUS CSS */
-   a[rel~="ugc"]:before {
-   content: "💬" !important;
-   opacity: 0.8 !important;
-   font-size: 10px !important;
-   line-height: 12px !important;
-   background: rgba(74, 74, 74, .5) !important;
-   outline: 1px solid rgba(74, 74, 74, .8) !important;
-   padding: 0 !important;
-   width: 13px !important; min-width: 13px !important; max-width: 13px !important; 
-   height: 13px !important;; min-height: 13px !important; max-height: 13px !important; 
-   display: inherit !important;
-   position: absolute !important;
-   z-index: 2147483647 !important;
-    box-shadow:
-        0.5px 0.5px 6px 1px rgba(0,0,0,.5),
-        2px 2px 2px -2px rgba(0,0,0,.6) !important;
-   }
+	a[rel~="ugc"]:before{
+	content: "💬" !important;
+	opacity: 0.8 !important;
+	font-size: 10px !important;
+	line-height: 12px !important;
+	background: rgba(74,74,74,.5) !important;
+	outline: 1px solid rgba(74,74,74,.8) !important;
+	padding: 0 !important;
+	width: 13px !important;min-width: 13px !important;max-width: 13px !important;
+	height: 13px !important;;min-height: 13px !important;max-height: 13px !important;
+	display: inherit !important;
+	position: absolute !important;
+	z-index: 2147483647 !important;
+	 box-shadow:
+		  0.5px 0.5px 6px 1px rgba(0,0,0,.5),
+		  2px 2px 2px -2px rgba(0,0,0,.6) !important;
+	}

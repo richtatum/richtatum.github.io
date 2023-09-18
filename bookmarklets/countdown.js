@@ -40,7 +40,6 @@ textElement.style.float='right';
 currentTime.style.fontFamily='Open Sans Extrabold';
 currentTime.style.color='#bbc5d3';
 currentTime.style.fontSize='20pt';
-currentTime.style.float='left';
 
 modal.appendChild(currentTime);
 modal.appendChild(timeElement);
@@ -49,7 +48,7 @@ backdrop.appendChild(modal);
 document.body.appendChild(backdrop);
 
 backdrop.addEventListener('click',function(e){if(e.target===backdrop){document.body.removeChild(backdrop);}});
-window.addEventListener('keydown', function(e){if(e.key==='Escape'){if(document.body.contains(backdrop)){document.body.removeChild(backdrop);}}});
+window.addEventListener('keydown',function(e){if(e.key==='Escape'){if(document.body.contains(backdrop)){document.body.removeChild(backdrop);}}});
 
 var targetTimeIn24Hour=new Date('1970-01-01 ' + targetTime);
 

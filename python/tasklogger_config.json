@@ -1,0 +1,36 @@
+﻿{
+"default_task_names": [
+     "START",
+     "BREAK",
+     "END",
+     "Copyediting",
+     "Daily Standup",
+     "Draft Writing",
+     "Email",
+     "Initial Research",
+     "Paid Time Off"
+     ],
+
+"default_categories": {
+     "START": "START",
+     "BREAK": "BREAK",
+     "Paid Time Off": "PTO",
+     "END": "END",
+     "Daily Standup":"Meeting",
+     "Email":"Admin"
+     },
+
+"unassociated_categories": [
+     "Blog",
+     "Business Development",
+     "Client A",
+     "Client B",
+     "Client C",
+     "Internal",
+     "Meeting",
+     "PTO",
+     "Sales",
+     "Social Media",
+     "Training"
+     ]
+}

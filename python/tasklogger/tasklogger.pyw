@@ -72,7 +72,7 @@ def close_window(event=None):
 def log_task():
     task_name = task_name_var.get()
     task_category = task_category_var.get()
-    timestamp = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")  # 12-hour format
+    timestamp = datetime_var.get()  # Use the datetime value from the GUI
     
     # Create or append to the TSV file
     with open('tasklogger_log.tsv', 'a', newline='') as file:

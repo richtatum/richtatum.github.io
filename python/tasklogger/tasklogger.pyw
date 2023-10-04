@@ -1,4 +1,4 @@
-# TASKLOGGER v.1
+# TASKLOGGER v.1.01
 # Simple Python GUI to append time-stamped tasks & categories to TSV text file.
 # 'tasklogger_config.json' used for default tasks & categories - but works without it.
 # 'tasklogger_log.tsv' records tasks in launch directory
@@ -28,6 +28,9 @@
 #     - Validation/empty field test
 #     - Task/category auto-completion?
 # -----------------------------------------------------------
+#
+# Changelog
+# 2023-10-04: Updated logfile writing to use UTF-8 to preserve high-bit characters
 
 
 # -*- coding: utf-8 -*-
@@ -75,7 +78,7 @@ def log_task():
     timestamp = datetime_var.get()  # Use the datetime value from the GUI
     
     # Create or append to the TSV file
-    with open('tasklogger_log.tsv', 'a', newline='') as file:
+    with open('tasklogger_log.tsv', 'a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file, delimiter='\t')
         writer.writerow([timestamp, task_name, task_category])
 
